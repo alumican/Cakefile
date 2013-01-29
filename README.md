@@ -1,5 +1,6 @@
 # Cakefile
 This script provides the simple way to join multiple CoffeeScript files, compile, and minify.
+This cakefile depends on npm packages '[muffin](https://github.com/hornairs/muffin)', '[q](https://github.com/kriskowal/q)', '[util](https://npmjs.org/package/util)'.
 
 ## Define tasks
 ```coffeescript
@@ -31,8 +32,11 @@ define = () ->
 ```
 
 ## Compile options
-```
-option '-m', '--minify', 'Minify JavaScript (original.min.js)'
-option '-w', '--watch', 'Watch files for changes, rerunning the specified command when any file is updated.'
-option '-b', '--bare', 'Compile the JavaScript without the top-level function safety wrapper.'
-```
++ `'-m' or '--minify'` :
+    Minify JavaScript.
+
++ `'-w' or '--watch'` :
+    Watch files for changes, rerunning the specified command when any file is updated.
+
++ `'-b' or '--bare'` :
+    Compile the JavaScript without the top-level function safety wrapper.
