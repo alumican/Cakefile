@@ -7,9 +7,9 @@ This cakefile depends on npm packages [muffin](https://github.com/hornairs/muffi
 define = () ->
 
     #setTask(
-    #    'Output JavaScript file name (without extension)', 
-    #    ['Array of source CoffeeScript file names (without extension)', ...], 
-    #    'Base directory of source files (if omitted, this is directory at Cakefile)', 
+    #    'Output JavaScript file name (without extension)'
+    #    ['Array of source CoffeeScript file names (without extension)', ...]
+    #    'Base directory of source files (if omitted, this is directory at Cakefile)'
     #    'Directory of output file (if omitted, this is directory at Cakefile)'
     #)
 
