@@ -31,6 +31,8 @@ define = () ->
 ```
 
 ## Compile options
+```
 option '-m', '--minify', 'Minify JavaScript (original.min.js)'
 option '-w', '--watch', 'Watch files for changes, rerunning the specified command when any file is updated.'
 option '-b', '--bare', 'Compile the JavaScript without the top-level function safety wrapper.'
+```
