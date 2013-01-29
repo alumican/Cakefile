@@ -22,7 +22,7 @@ define = () ->
 #npm install q
 muffin = require 'muffin'
 util = require 'util'
-Q = require 'q'
+require 'q'
 
 LOG = true
 
