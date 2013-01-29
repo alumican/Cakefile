@@ -1,18 +1,20 @@
+#cake libname1
+#cake -m -w -b libname2
+#Type 'cake' to see compiler options
 define = () ->
 
-	#Join hoge.coffee fuga.coffee subA/foo.coffee subB/bar/bar.coffee, and compile to libname1.js
+	#Join source.coffee coffeefile.coffee without/extension.coffee, and compile to libname1.js
 	setTask('libname1', [
-		'hoge'
-		'fuga'
-		'subA/foo'
-		'subB/bar'
+		'source'
+		'coffeefile'
+		'without/extension'
 	], './path/to/src/base/directory', './path/to/output/directory')
 
-	#Join piyo.coffee subC/baz/piyo.coffee, and compile to libname2.js
+	#Join other.coffee task/here.coffee, and compile to libname2.js
 	#Source base directory and output directory is default value '.'
 	setTask('libname2', [
-		'piyo'
-		'subC/baz'
+		'other'
+		'task/here'
 	])
 
 
@@ -20,10 +22,10 @@ define = () ->
 
 
 ##################################################
-# This script depends on following packages.
-# npm install muffin
-# npm install util
-# npm install q
+#This script depends on following packages.
+#npm install muffin
+#npm install util
+#npm install q
 muffin = require 'muffin'
 util = require 'util'
 Q = require 'q'
