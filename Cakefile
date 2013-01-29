@@ -1,17 +1,11 @@
-#cake libname1
-#cake -m -w -b libname2
-#Type 'cake' to see compiler options
 define = () ->
 
-	#Join source.coffee coffeefile.coffee without/extension.coffee, and compile to libname1.js
 	setTask('libname1', [
 		'source'
 		'coffeefile'
 		'without/extension'
 	], './path/to/src/base/directory', './path/to/output/directory')
 
-	#Join other.coffee task/here.coffee, and compile to libname2.js
-	#Source base directory and output directory is default value '.'
 	setTask('libname2', [
 		'other'
 		'task/here'
